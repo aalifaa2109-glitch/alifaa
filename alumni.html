@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#261900",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#414844",
+                    "surface-variant": "#e1e3e4",
+                    "surface-container": "#edeeef",
+                    "surface-container-high": "#e7e8e9",
+                    "tertiary-fixed": "#f3e2af",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#493f1a",
+                    "on-primary-container": "#86af99",
+                    "on-tertiary-fixed-variant": "#514620",
+                    "on-primary": "#ffffff",
+                    "outline": "#717973",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "inverse-surface": "#2e3132",
+                    "surface-bright": "#f8f9fa",
+                    "primary-container": "#1b4332",
+                    "tertiary-container": "#baab7c",
+                    "surface-dim": "#d9dadb",
+                    "on-primary-fixed": "#002114",
+                    "surface-tint": "#3f6653",
+                    "tertiary-fixed-dim": "#d6c695",
+                    "on-secondary-container": "#785a1a",
+                    "secondary-fixed": "#ffdea5",
+                    "primary-fixed": "#c1ecd4",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary-fixed": "#231b00",
+                    "background": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#775a19",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-container": "#fed488",
+                    "surface": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#a5d0b9",
+                    "on-background": "#191c1d",
+                    "on-surface": "#191c1d",
+                    "secondary-fixed-dim": "#e9c176",
+                    "primary": "#012d1d",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary": "#6a5e36",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .asymmetric-arch {
+            border-top-left-radius: 6rem;
+            border-bottom-right-radius: 6rem;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(25, 28, 29, 0.06);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .pattern-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l2.5 12.5L45 15l-12.5 2.5L30 30l-2.5-12.5L15 15l12.5-2.5z' fill='%23012d1d' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-12 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold text-emerald-900 dark:text-emerald-50 italic font-headline"><a href="index.html"><img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugFAh4476v0GtA2pDKMXSixGxSejXcDbPDmV2SHowzJbzetuqvRLx-yAxu30NPR7pnksOw-8a5brY-4cz-dJHmyTvwMSD-6po_Kc1L6D8Hx17g-CLkHhTRPRolSzqkokrlxHiugg8Rfx-09zV1KKQWqamV-vc9bBElGLCZlR_340KqxCoA2iAD07JIOHQ45ZJ1ODEPL0y8lxN7Bjtkehcjz2DjZrHJ3K7_m0T_xh9h1jdm8YSLoPae4qTKe2EddD5yAflTeYaHbcQ"/></a></div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-noto-serif text-sm tracking-widest uppercase text-emerald-900/70 dark:text-emerald-50/70 hover:text-amber-600 transition-colors duration-300" href="profil.html">Profil</a>
+<a class="font-noto-serif text-sm tracking-widest uppercase text-emerald-900/70 dark:text-emerald-50/70 hover:text-amber-600 transition-colors duration-300" href="kolaborasi.html">Aktifitas</a>
+<a class="font-noto-serif text-sm tracking-widest uppercase text-emerald-900/70 dark:text-emerald-50/70 hover:text-amber-600 transition-colors duration-300" href="kolaborasi.html">Ekstra</a>
+<a class="font-noto-serif text-sm tracking-widest uppercase text-amber-700 dark:text-amber-500 font-bold border-b-2 border-amber-700" href="kolaborasi.html">Kolaborasi</a>
+<a class="font-noto-serif text-sm tracking-widest uppercase text-emerald-900/70 dark:text-emerald-50/70 hover:text-amber-600 transition-colors duration-300" href="pmb.html">PMB</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-semibold tracking-wide hover:scale-95 duration-200 transition-all">
+                    Daftar Sekarang
+                </button>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<!-- Sidebar (Visible for Desktop context) -->
+<aside class="hidden xl:flex h-full w-64 fixed left-0 bg-emerald-950 dark:bg-black flex-col z-40 border-r border-white/5">
+<div class="p-8">
+<h2 class="text-xl font-headline text-amber-500 mb-1">IDDC Portal</h2>
+<p class="text-xs text-emerald-200/40 uppercase tracking-widest">The Digital Sanctuary</p>
+</div>
+<nav class="flex-1 mt-4">
+<a class="flex items-center gap-4 text-emerald-200/60 p-4 pl-8 hover:bg-emerald-800/50 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="palette">palette</span>
+<span class="text-sm font-manrope">Karya Santri</span>
+</a>
+<a class="flex items-center gap-4 bg-emerald-900 text-amber-500 rounded-r-full p-4 pl-8 translate-x-1 duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<span class="text-sm font-manrope">Kata Alumni</span>
+</a>
+<a class="flex items-center gap-4 text-emerald-200/60 p-4 pl-8 hover:bg-emerald-800/50 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="text-sm font-manrope">Dukungan</span>
+</a>
+<a class="flex items-center gap-4 text-emerald-200/60 p-4 pl-8 hover:bg-emerald-800/50 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="text-sm font-manrope">Galeri</span>
+</a>
+<a class="flex items-center gap-4 text-emerald-200/60 p-4 pl-8 hover:bg-emerald-800/50 transition-all group" href="#">
+<span class="material-symbols-outlined" data-icon="newspaper">newspaper</span>
+<span class="text-sm font-manrope">Berita</span>
+</a>
+</nav>
+<div class="p-8 mt-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-amber-500" data-icon="account_circle" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+</div>
+<div>
+<p class="text-xs font-bold text-white">Akun Santri</p>
+<p class="text-[10px] text-emerald-200/40">Portal Akademik</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="xl:ml-64 pt-24 min-h-screen pattern-overlay">
+<!-- Hero Section -->
+<section class="px-8 md:px-16 py-20 max-w-7xl mx-auto">
+<div class="max-w-3xl mb-16">
+<span class="text-secondary font-label text-xs tracking-[0.2em] uppercase mb-4 block">Estetika Dakwah</span>
+<h1 class="text-5xl md:text-7xl font-headline text-primary leading-tight mb-8">
+                    Menenun Tradisi dalam <span class="italic text-secondary">Kanvas Digital</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    Eksplorasi manifestasi visual dari pemikiran santri IDDC. Sebuah simfoni antara kaidah seni Islam klasik dan teknologi desain kontemporer.
+                </p>
+</div>
+<!-- Bento Grid Portfolio (Karya Santri) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[250px]">
+<!-- Item 1: Large Featured -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface-container shadow-sm border border-outline-variant/15">
+<img alt="Islamic Calligraphy Digital Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern digital calligraphy art with emerald and gold accents, fluid brush strokes against a textured cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmr5VLCA-8Mqt5Fa6vxx1n-883yoY2v0c5mckFEEybFbmLjrrzS9BJR53xk-R27urhGwqYP3ZA6zhRdXj0YwVQhZsZezLi6pOI0GdPZJMKaouc6ISEYG0LEFNIM5sErUwPB_q27Ap_-hnXTSUJWUKbzakj0u9Iyn2uePhQy8qjSVBkYHabeyDkb9CrgvmDl6ZFqFMpQ28XYMOyRGWYTcye4v7td_kDIx-OcecL-1eNRncTaxeakP6qS9KqWfY4bvvkLmTRiumoa_4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="text-amber-500 font-label text-[10px] tracking-widest uppercase mb-2">Typography &amp; Branding</span>
+<h3 class="text-white font-headline text-2xl">Revitalisasi Khat Kufi</h3>
+<p class="text-emerald-100/70 text-sm mt-2 max-w-md">Eksperimen tipografi modular yang menggabungkan struktur geometris Kufi dengan estetika minimalis Nordik.</p>
+</div>
+</div>
+<!-- Item 2: Vertical Arch -->
+<div class="md:col-span-4 md:row-span-3 group relative overflow-hidden bg-primary-container asymmetric-arch shadow-lg">
+<img alt="Abstract Pattern Design" class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110" data-alt="Intricate geometric patterns inspired by Islamic architecture with deep green and gold gradients and soft bokeh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHo9klqAyFl87RxHXRUEsBKG5cJAMGzv2cGILw78ULwiumJ9R_fqqSZCT2v8p6m9X2NtxIQEoAjQ-o-MmjdWDspB8Lm9t5p8Kreb-M4TY8a3Xq1C9-t7ZHqlj6Lgx-Ans9c-NZK0330IJqAiHX1Qy-02OuqraMxge9A7czzDokRQO6on9AFOGtRgpBQzxH4eBIpa_WJBAjy3LzFP8hM6L_I9mCaw3yW0S4QUF1avetdVlVHXMpNauryvSeKkvp3m4KgXuB7zem104"/>
+<div class="absolute inset-0 flex flex-col justify-center items-center text-center p-8">
+<span class="material-symbols-outlined text-amber-500 mb-4 text-4xl" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-white font-headline text-xl mb-4">Filosofi Geometri</h3>
+<p class="text-emerald-50/60 text-xs leading-relaxed">Penerapan rasio emas dalam desain antarmuka berbasis spiritualitas.</p>
+<button class="mt-8 border-b border-amber-500 text-amber-500 text-xs font-label py-2 hover:tracking-widest transition-all">LIHAT DETAIL</button>
+</div>
+</div>
+<!-- Item 3: Square -->
+<div class="md:col-span-4 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-high shadow-sm border border-outline-variant/15">
+<img alt="Publication Design" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="High-end editorial book design with minimalist layout and elegant serif typography on premium textured paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMTn1CWqFUBjkz2HZBGLt_RccnSaUj_ZNYRiJtSzYbXcz1GZwmknpi1M_R1nlUwb--6ldOR7fbbs8zleG9-cFLpoUnM5JNCCIIK0pLqU3ht6edf_IrGcPLHxHA4G5pSoyYf6PPxPwNww6CTMisOnBvIAyZaLCqMoKtLtvgpv8QEEGviixyILFHLiLvtcy2yO2-zvwRxhOwfLMNxWLAgECTvTVKolgwttjqr-K3Rjyh8YY2F3BhNeLN2wVH6iYJ_Ltjp-OB8Jju1Dg"/>
+<div class="absolute top-4 left-4">
+<div class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-primary tracking-tighter">EDITORIAL</div>
+</div>
+</div>
+<!-- Item 4: Wide -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-secondary-container/20 border border-secondary/10 flex items-center p-6">
+<div class="z-10">
+<h4 class="font-headline text-primary text-lg">Curated Exhibition</h4>
+<p class="text-on-surface-variant text-xs mt-1 italic">Visi 2024: Ruang &amp; Cahaya</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-secondary text-3xl opacity-30 group-hover:opacity-100 transition-opacity" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<!-- Item 5: Small -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-primary">
+<div class="absolute inset-0 pattern-overlay opacity-10"></div>
+<div class="relative h-full flex flex-col justify-center px-8">
+<p class="text-emerald-100/50 text-[10px] tracking-widest uppercase mb-1">Total Karya</p>
+<p class="text-amber-500 text-4xl font-headline">1,240+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Alumni Testimonials Section (Kata Alumni) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 md:px-16">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl font-headline text-primary mb-4">Gema Jejak Langkah</h2>
+<p class="text-on-surface-variant">Bagaimana pendidikan di IDDC membentuk perspektif baru bagi para desainer muslim di kancah global.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Testimonial 1 -->
+<div class="relative p-12 bg-white rounded-2xl editorial-shadow">
+<span class="absolute top-8 left-8 text-secondary/10 text-8xl font-headline leading-none">“</span>
+<div class="relative z-10">
+<p class="text-xl font-headline text-primary italic leading-relaxed mb-10">
+                                "IDDC bukan sekadar institusi desain; ia adalah 'digital sanctuary' di mana kami belajar menyatukan antara keindahan duniawi dengan kedalaman spiritual. Portfolio saya kini memiliki jiwa."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden">
+<img alt="Alumni Profile" class="w-full h-full object-cover" data-alt="Professional headshot of a creative young man with a warm smile, soft natural lighting and studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw4JkKtIjoUT9yOp0gevchEdWu6t1N3b55xLGIA-7u5tCME3MOUEk7ddQe6VwpLJwLdpxUg7QpU2IsKCUnN744zttE9u_0SSRnfaueqNsmIvqNALo0Tby-laVHffgFt3lx-fbOYoyUoRTeCm8bRWH4dD2MtV2SJhUYF8yJZi1-_6pafJdknXJ6yYgwBrcYV439q4rGJnpiC0trUQ_p_i64OXia7hlNyu7PHrJKj-a2E7e9lIQkpd21cAe6vjGfFNfQ90uTtE4szZ4"/>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Ahmad Zaki</p>
+<p class="text-xs text-on-surface-variant">Creative Director at Nur Visuals, London</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="relative p-12 bg-white rounded-2xl editorial-shadow">
+<span class="absolute top-8 left-8 text-secondary/10 text-8xl font-headline leading-none">“</span>
+<div class="relative z-10">
+<p class="text-xl font-headline text-primary italic leading-relaxed mb-10">
+                                "Kemampuan teknis bisa dipelajari di mana saja, tapi di sini saya menemukan 'Mengapa'. Desain bagi saya sekarang adalah bentuk dakwah visual yang elegan dan tenang."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden">
+<img alt="Alumni Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a woman professional in creative industry with confident expression and soft sunset lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfqUVmqfvKgBy9W-TlXNUdjbTF5air2fNxlQ8s9-CZ9WlTIYoNYwqKzWoEzFJeQLLYKene65Z9t-7MEvgWU7HKq-8kS5oEdNcawUqbmqDyvDxhckYfWdiDomMK_OOm0FDaj3HhgS4-_Oubk2xCp_SlTX3k6hprSK-C-9Zbv0ZnzNkMlsZY4eriajg4Hi1UigTEcy322XaOB7Gzc7lBpV92DpVEI5CB47F82F8IS-n9BgXwPmPulYuWVusw-NrRuMKSKmhDoI8rgv0"/>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Siti Khadijah</p>
+<p class="text-xs text-on-surface-variant">Senior UI/UX Designer, Dubai Tech</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: The Content Veil -->
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<img alt="Inspirational Workspace" class="absolute inset-0 w-full h-full object-cover" data-alt="Spacious minimalist design studio with large windows, bright natural light, Islamic art on the walls, and clean wooden workstations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB493z_8n8nKwNQjHAVzKATa8W73BHJ_MOjT6xNx2jcp7_aoFrgvZu4i1HvB4Z4KL4LlUNti_HcS83d1kyvEM-_-FI4r43j5G9_uozDkjyTNAikmuGbYzbEG0Xz1O59R-8qRxA_cSCLm72RrjzafVod_QOwo3uXTMO1rYJWGDnwLnbnemLTlYE3V_6gJh_384XMY4RGUQzSmbBNfZgUeQElsCKpH2YQblucA-lsJePprilIEjP9L3OeuxD6vnKb2uUoHmKEJgzN0lQ"/>
+<div class="absolute inset-0 bg-primary/80 backdrop-blur-sm"></div>
+<div class="relative z-10 text-center px-8 max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline text-white mb-8">Jadilah Bagian dari Generasi Kreatif Baru</h2>
+<p class="text-emerald-100/70 text-lg mb-12">Pendaftaran Semester Ganjil 2024 telah dibuka. Mari ciptakan standar baru dalam estetika Islam.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-secondary text-white px-10 py-4 rounded-lg font-bold hover:scale-95 transition-transform">UNDUH PROSPEKTUS</button>
+<button class="border border-white/30 text-white px-10 py-4 rounded-lg font-bold hover:bg-white/10 transition-colors">KONSULTASI AKADEMIK</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-emerald-900 dark:bg-emerald-950 text-emerald-50 py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<h3 class="text-lg font-noto-serif text-emerald-50 mb-4 italic"><img alt="IDDC Logo" class="h-12 w-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0ugFAh4476v0GtA2pDKMXSixGxSejXcDbPDmV2SHowzJbzetuqvRLx-yAxu30NPR7pnksOw-8a5brY-4cz-dJHmyTvwMSD-6po_Kc1L6D8Hx17g-CLkHhTRPRolSzqkokrlxHiugg8Rfx-09zV1KKQWqamV-vc9bBElGLCZlR_340KqxCoA2iAD07JIOHQ45ZJ1ODEPL0y8lxN7Bjtkehcjz2DjZrHJ3K7_m0T_xh9h1jdm8YSLoPae4qTKe2EddD5yAflTeYaHbcQ"/></h3>
+<p class="font-manrope text-xs tracking-tight text-emerald-200/50 leading-relaxed">
+                        Pusat keunggulan pendidikan desain berbasis nilai-nilai Islam. Mencetak talenta kreatif yang berakar pada tradisi dan melesat dalam inovasi.
+                    </p>
+</div>
+<div>
+<h4 class="text-amber-500 font-label text-xs uppercase tracking-widest mb-4">Navigasi</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Program Studi</a></li>
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Galeri Karya</a></li>
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Penerimaan Santri</a></li>
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Berita &amp; Acara</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-amber-500 font-label text-xs uppercase tracking-widest mb-4">Legalitas</h4>
+<ul class="space-y-2">
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Privacy Policy</a></li>
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Terms of Service</a></li>
+<li><a class="font-manrope text-xs text-emerald-200/50 hover:underline decoration-amber-500" href="#">Copyright Info</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-amber-500 font-label text-xs uppercase tracking-widest mb-4">Hubungi Kami</h4>
+<p class="font-manrope text-xs text-emerald-200/50 mb-4">Jl. Peradaban No. 101, <br/>Kota Kreatif, Indonesia</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-lg opacity-80 hover:opacity-100 cursor-pointer" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-lg opacity-80 hover:opacity-100 cursor-pointer" data-icon="phone">phone</span>
+<span class="material-symbols-outlined text-lg opacity-80 hover:opacity-100 cursor-pointer" data-icon="share">share</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-manrope text-[10px] tracking-tight text-emerald-200/30">© 2024 Islamic Design &amp; Dakwah College. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="text-[10px] uppercase tracking-tighter text-emerald-200/20">EST. 1445 H</span>
+</div>
+</div>
+</footer>
+</main>
+<!-- FAB for quick action (Suppressed on details pages, showing here for main browse) -->
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-amber-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50">
+<span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+</button>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let menuBtn = document.querySelector('button:has(.material-symbols-outlined[data-icon="menu"]), button:has(span:contains("menu"))');
+    // Fallback if the first selector fails
+    if (!menuBtn) {
+        const spans = Array.from(document.querySelectorAll('span.material-symbols-outlined'));
+        const targetSpan = spans.find(span => span.textContent.trim() === 'menu');
+        if (targetSpan) {
+            menuBtn = targetSpan.closest('button');
+        }
+    }
+    
+    if (menuBtn) {
+        // Create a mobile menu container if it doesn't exist
+        let mobileMenu = document.createElement('div');
+        mobileMenu.className = 'fixed inset-0 bg-white/95 dark:bg-emerald-950/95 z-[100] hidden flex-col items-center justify-center space-y-8';
+        mobileMenu.innerHTML = 
+            <a href="index.html" class="text-2xl font-noto-serif text-emerald-900 dark:text-emerald-50">Beranda</a>
+            <a href="profil.html" class="text-2xl font-noto-serif text-emerald-900 dark:text-emerald-50">Profil</a>
+            <a href="kolaborasi.html" class="text-2xl font-noto-serif text-emerald-900 dark:text-emerald-50">Kolaborasi & Aktifitas</a>
+            <a href="alumni.html" class="text-2xl font-noto-serif text-emerald-900 dark:text-emerald-50">Karya & Alumni</a>
+            <a href="pmb.html" class="text-2xl font-noto-serif text-amber-600 font-bold">PMB</a>
+            <button class="absolute top-6 right-6 text-emerald-900 dark:text-emerald-50 close-menu">
+                <span class="material-symbols-outlined" style="font-size: 32px">close</span>
+            </button>
+        ;
+        document.body.appendChild(mobileMenu);
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('flex');
+        });
+        
+        mobileMenu.querySelector('.close-menu').addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+        });
+    }
+});
+</script>
+</body></html>
